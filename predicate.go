@@ -2,7 +2,7 @@ package sorted
 
 import "golang.org/x/exp/constraints"
 
-// Compare two values return -1 for less, +1 for grater, 0 for same.
+// Compare two values return -1 for less, +1 for greater, 0 for same.
 func Compare[T constraints.Ordered](self T, other T) int {
 	if self < other {
 		return -1
